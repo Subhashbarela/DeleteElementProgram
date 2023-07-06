@@ -13,7 +13,7 @@ namespace DeleteElementUsingGeneric
             string ans = "";
             do
             {
-                Console.WriteLine("1: Delete using general class \n2: Delete using generic method");
+                Console.WriteLine("1: Delete using general class \n2: Delete using generic method \n3: Delete using generic class");
                 Console.WriteLine("Enter the choice");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -38,6 +38,18 @@ namespace DeleteElementUsingGeneric
                             delete.DeleteMethod<double>(doubleArr);
                             char[] charArr = { 'A', 'B', 'C', 'D', 'E', 'F' };
                             delete.DeleteMethod<char>(charArr);
+                            break;
+                        }
+                    case 3:
+                        {
+                            int[] intArray = { 20, 40, 10, 50, 70, 5 };
+                            GenericClass<int>.DeleteMethod(intArray);
+
+                            double[] doubleArray = { 20.5, 40.5, 10.5, 50.5, 70.1, 5.9 };
+                            GenericClass<double>.DeleteMethod(doubleArray);
+
+                            char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
+                            GenericClass<char>.DeleteMethod(charArray);
                             break;
                         }
                     default:
