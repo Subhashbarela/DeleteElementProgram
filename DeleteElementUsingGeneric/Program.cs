@@ -14,7 +14,7 @@ namespace DeleteElementUsingGeneric
             do
             {
                 Console.WriteLine("1: Delete using general class \n2: Delete using generic method \n3: Delete using generic class" +
-                    "\n4: integer minimum value \n5: float Minimum value \n6: string minimum value\n7: Find min using generic method");
+                    "\n4: integer minimum value \n5: float Minimum value \n6: string minimum value\n7: Find min using generic method\n8: find minimum using generic class");
                 Console.WriteLine("Enter the choice");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -81,6 +81,16 @@ namespace DeleteElementUsingGeneric
                             float floatmin = FindMinUsingGenericMethod.CheckMinNumber<float>(4.5f, 2.5f, 30.7f);
                             Console.WriteLine("Minimun float is : "+floatmin);
                             string stringmin = FindMinUsingGenericMethod.CheckMinNumber<string>("Apple", "Peach", "Banana");
+                            Console.WriteLine("Minimun string is : "+stringmin);
+                            break;
+                        } 
+                    case 8:
+                        {
+                            int intmin = FindMinUsingGenericClass<int>.CheckMinNumber(40, 20, 30);
+                            Console.WriteLine("Minimun integer is : "+intmin);
+                            float floatmin = FindMinUsingGenericClass<float>.CheckMinNumber(4.5f, 2.5f, 30.7f);
+                            Console.WriteLine("Minimun float is : "+floatmin);
+                            string stringmin = FindMinUsingGenericClass<string>.CheckMinNumber("Apple", "Peach", "Banana");
                             Console.WriteLine("Minimun string is : "+stringmin);
                             break;
                         }

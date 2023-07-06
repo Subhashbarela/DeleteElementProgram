@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeleteElementClass.cs" />
+    <Compile Include="FindMinUsingGenericClass.cs" />
     <Compile Include="FindMinUsingGenericMethod.cs" />
     <Compile Include="GenericClass.cs" />
     <Compile Include="GenericMethodClass.cs" />
