@@ -46,7 +46,7 @@
     <Compile Include="DeleteElementClass.cs" />
     <Compile Include="GenericClass.cs" />
     <Compile Include="GenericMethodClass.cs" />
-    <Compile Include="IntMinValueClass.cs" />
+    <Compile Include="MinValueClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
