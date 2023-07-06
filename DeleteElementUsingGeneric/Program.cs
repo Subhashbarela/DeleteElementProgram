@@ -13,7 +13,8 @@ namespace DeleteElementUsingGeneric
             string ans = "";
             do
             {
-                Console.WriteLine("1: Delete using general class \n2: Delete using generic method \n3: Delete using generic class");
+                Console.WriteLine("1: Delete using general class \n2: Delete using generic method \n3: Delete using generic class" +
+                    "\n4: integer min value");
                 Console.WriteLine("Enter the choice");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -50,6 +51,13 @@ namespace DeleteElementUsingGeneric
 
                             char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
                             GenericClass<char>.DeleteMethod(charArray);
+                            break;
+                        }
+                    case 4:
+                        {
+                            IntMinValueClass intMin = new IntMinValueClass();
+                            int min=intMin.MinimunIntegerNumber(12,43,10);
+                            Console.WriteLine("Minimun value of integer is : "+min);
                             break;
                         }
                     default:
